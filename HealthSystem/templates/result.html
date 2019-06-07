@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+<div align="center">
+    <h1>Health System</h1>
+    <h5>Showing below are top 5 death causes for {{gender}}s of age {{age}} living in {{state}} in 2017</h5>
+    {% for table in tables %}
+    {{ table|safe }}
+    {% endfor %}
+    <br>
+    <button type="button" onclick="goBack()">Back</button>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</div>
+</body>
+</html>
