@@ -165,6 +165,7 @@ $ python Data_crawler.py
 $ rm "data/states/United States.xlsx"
 ```
 #### Process scraped data
+add 'state' to each sheet of population.xlsx
 ``` bash
 $ python Merge_data.py
 ```
