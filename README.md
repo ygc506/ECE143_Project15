@@ -1,6 +1,5 @@
 # ECE143_Project (Group 15): Analysis on Causes of Death in the United States 
 
-[TOC]
 ## Problem
 Analyzing the overall life expectancy based on the gender, age and disease across 51 states in the United States
 
@@ -17,14 +16,15 @@ In 2017,
 The median household income for the states in central east areas are relatively lower than that for other states. 
 - For most cause of deaths, the older, the higher death rate.
 | Death rate highest on|    Cause of death |
-| :--------              |                : --------| 
-| Child                           |  Birth Trauma, Low Birth Weight |  
-| Middle age                 |   Drug Use, Homicide, AIDS, Poisoning, Hepatitis | 
-| Elderly                        |  Most | 
-| No correlation            |  Drownings, Road Traffic Accidents, Suicide |
+| :--------|                : --------| 
+| Child |  Birth Trauma, Low Birth Weight |  
+| Middle age |   Drug Use, Homicide, AIDS, Poisoning, Hepatitis | 
+| Elderly             |  Most | 
+| No correlation |  Drownings, Road Traffic Accidents, Suicide |
 - Some causes of death are related to gender
+
 | Male-related | Female-related|
-| :--------     |                : --------| 
+| :--------     |   : --------| 
 |Suicide Road, Road Traffic Accidents, Prostate Cancer, Poisonings| Stroke, Breast Cancer,  Alzheimer's, Uterine Cancer, Ovary Cancer|
 - Cancer as one of main cause of deaths, there is no big difference in cancer death rate between male and female at all ages. 
 - For people between 15 and 34 in California, they should care more about Road Traffic Safety and Mental Conditions.
