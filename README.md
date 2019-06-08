@@ -111,8 +111,9 @@ Root
 ## Instructions on running the code
 
 ### Required packages 
-make sure to install below packages to process the data and generate the plots
 **Python version**: `3.6.8`
+make sure to install below packages to process the data and generate the plots
+
 #### 1. [Scientific Python distributions](https://www.scipy.org/install.html)
 * Installation 
 ``` bash
