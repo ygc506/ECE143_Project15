@@ -37,17 +37,17 @@ Root
 |
 +----data                       Saved data 
 |   | state_population_ages_all_wo_us.csv
-|   |                       Death data in the US, 2017 including sum of all ages                    
+|   |                           Death data in the US, 2017 including sum of all ages                    
 |   |
 |   | state_population_ages_wo_us.csv
-|   |                       Death data in the US, 2017 without sum of all ages
+|   |                           Death data in the US, 2017 without sum of all ages
 |   |           
-|   | h08.csv             US income data
-|   | population.xlsx     Scraped population raw data
-|   +----states             A folder containing scraped US death data
+|   | h08.csv                   US income data
+|   | population.xlsx           Scraped population raw data
+|   +----states                 A folder containing scraped US death data
 |
 +----img
-|   | healthsystem.gif    gif used in readme
+|   | healthsystem.gif          gif used in readme
 |
 +----HealthSystem               A web application for searching data
 |       |   HealthSystem.py     The main function
