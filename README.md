@@ -77,7 +77,7 @@ Our system can provide health advice to people who input their location, age, an
 
 ## Files Details:
 **demo.ipynb**: demonstrate all visualization figures and plots.  
-                combinations of the use of functions provided in the below .py files
+                combinations of the use of functions provided in the below .py files.  
 **plot_demo.py**: functions used for general plots.  
 **plot_map_income.py**: functions used for plotting US map and correlation between death rate and household income.  
 **plot_cancer.py**: functions used for plotting one certain cause of death-cancer.  
