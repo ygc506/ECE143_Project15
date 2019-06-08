@@ -1,21 +1,16 @@
 # ECE143_Project (Group 15): Analysis on Causes of Death in the United States 
 
 ## Problem
+
 Analyzing the overall life expectancy based on the gender, age and disease across 51 states in the United States
 
 
 ## Motivation
+
 Mortality is one of healthcare outcome measurements. If we combine the mortality with causes of death, it could be used to evaluate how disease/non-disease affect our life expectancy. 
 World health organization (WHO) and the United States centers for disease control and prevention (CDC) make the statistics data public every year. Understanding these data remains a major challenge. To solve this problem, we decided to build up the mortality ranking system, integrate the mortality with causes of death, and visualize them. It helps us to choose the good life style in the future. 
 
 ## Conclusions
-
-| Death rate highest on|  Cause of death |
-| --------| --------| 
-| Child |  Birth Trauma, Low Birth Weight |  
-| Middle age | Drug Use, Homicide, AIDS, Poisoning, Hepatitis | 
-| Elderly    |  Most | 
-| No correlation |  Drownings, Road Traffic Accidents, Suicide |
 
 In 2017, 
 - The top one leading cause of death is coronary heart disease in the US. 
@@ -41,15 +36,19 @@ The median household income for the states in central east areas are relatively 
 - For people between 15 and 34 in California, they should care more about Road Traffic Safety and Mental Conditions.
 
 ## Data sources
+
 - **World health rankings website**, from [here](https://www.worldlifeexpectancy.com/usa-cause-of-death-by-age-and-gender)
 The main data are from the public website (shown as above), which contain the death rate, the causes of disease, gender, and the age for different states in the US. 
 - **The household income for 51 states in the United States in 2017**, from [here](https://www2.census.gov/programs-surveys/cps/tables/time-series/historical-income-households/h08.xls)
 
 ## Methodology 
+
 ### Collecting and process data
 Our proposed solution is to use BeautifulSoup to extract data from the websites (shown above). Then we use pandas, numpy to clean and organize data. Calculating death rate. Making it easy to access.
+
 ### Health System
 We build a health ranking system using Flask. Our system can provide health advice to people who input their location, age, and gender.
+
 ### Analysis and visualization
 Firstly, we reorganize the data based on the variables (ex. gender, ages, and states). Then we select a portion of dimension in data to visualize the data using tools including matplotlib, seaborn, bokeh and plotly to answer the following questions:
 - Which are top 10 leading causes of death in the US? 
@@ -98,6 +97,7 @@ Root
 |    plot_map_income.py         Plot code for US death and income correlation section
 |    README.md
 ```
+
 ### Files Details
 **demo.ipynb**: demonstrate all visualization figures and plots.  
                 combinations of the use of functions provided in the below .py files
@@ -105,9 +105,10 @@ Root
 **plot_map_income.py**: functions used for plotting US map and correlation between death rate and household income.  
 **plot_cancer.py**: functions used for plotting one certain cause of death-cancer.  
 **plot_CA.py**: functions used for plotting one certain state analysis - California.  
-
 **All .csv data files are in the `data` folder **
+
 ## Instructions on running the code
+
 ### Required packages 
 make sure to install below packages to process the data and generate the plots
 **Python version**: `3.6.8`
