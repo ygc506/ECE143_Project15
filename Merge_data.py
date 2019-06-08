@@ -110,3 +110,8 @@ def merge_data(states_path, population_file, output, age_all=True):
     all_data_ages = pd.concat(frames)
 
     all_data_ages.to_csv(output, index=False)
+
+
+if __name__ == '__main__':
+    merge_data("data/states/", "data/population.xlsx", "data/state_population_ages_all_wo_us.csv")
+    merge_data("data/states/", "data/population.xlsx", "data/state_population_ages_wo_us.csv", age_all=False)
