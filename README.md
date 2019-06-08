@@ -11,12 +11,12 @@ World health organization (WHO) and the United States centers for disease contro
 ## Dataset:  
 World health rankings website: [here](https://www.worldlifeexpectancy.com/usa-cause-of-death-by-age-and-gender)
 The entire data are from the public website (shown as above), which contain the death rate, the causes of disease, gender, and the age for different states in the US. 
-The house-hould income for 51 states in the United States in 2017, from [here]()
+The house-hould income for 51 states in the United States in 2017, from [here](https://www.census.gov/content/dam/Census/library/publications/2018/acs/acsbr17-01.pdf)
 
 ## Methodology:  
 ### Packages:  
 #### 1. Pandas
-* Official website: [here]
+* Official website: [here](https://pandas.pydata.org/)
 * Installation
     The best way to get pandas is via conda:
     `conda install pandas`
@@ -24,15 +24,15 @@ The house-hould income for 51 states in the United States in 2017, from [here]()
     `pip install pandas`
 
 #### 2. Sqlite
-* Official website: [here]
+* Official website: [here](https://docs.python.org/2/library/sqlite3.html)
 
 
 #### 3. Numpy
-* Official website: [here]
+* Official website: [here](https://www.scipy.org/install.html)
 
 
 #### 4. Bokeh
-* Official website: [here]
+* Official website: [here](https://bokeh.pydata.org/en/latest/)
 * Installation
 The best way to get bokeh is via conda:
 `conda install bokeh`
@@ -41,7 +41,7 @@ OR
 
 
 #### 5. Holoviews
-* Official website: [here]
+* Official website: [here](http://holoviews.org/)
 * Installation
   `pip install holoviews`
   OR
@@ -50,12 +50,12 @@ OR
 
 
 #### 6. Plotly
-* Official website: [here]
+* Official website: [here](https://plot.ly/python/)
 
 
 
 #### 7. Matplotlib
-* Official website: [here]
+* Official website: [here](https://matplotlib.org/)
 * Installation
   `python -m pip install -U pip`
   `python -m pip install -U matplotlib`
@@ -63,7 +63,7 @@ OR
 
 
 #### 8. Seaborn
-* Official website: [here]
+* Official website: [here](https://seaborn.pydata.org/)
 *	Installation
   The best way to get bokeh is via conda:
   `conda install seaborn`
@@ -75,11 +75,11 @@ OR
 Our proposed solution is to use a python package (BeautifulSoup) to extract data from the websites (shown above) and build up the overall health ranking system  and house-hould income across 51 states. Firstly, we organize the data according to gender, ages, and states.  Then we are going to visualize the data by showing the number of deaths vs. different causes.
 Our system can provide health advice to people who input their location, age, and gender.
 
-## File Details:
+## Files Details:
 **demo.ipynb**: demonstrate all visualization figures and plots.  
 **plot_demo.py**: functions used for general plots.  
 **plot_map_income.py**: functions used for plotting US map and correlation between death rate and household income.  
 **plot_cancer.py**: functions used for plotting one certain cause of death-cancer.  
 **plot_CA.py**: functions used for plotting one certain state analysis - California.  
 
-**All .csv data files is in the data folder **
+**All .csv data files is in the `data` folder **
