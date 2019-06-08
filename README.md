@@ -9,12 +9,14 @@ Mortality is one of healthcare outcome measurements. If we combine the mortality
 World health organization (WHO) and the United States centers for disease control and prevention (CDC) make the statistics data public every year. Understanding these data remains a major challenge. To solve this problem, we decided to build up the mortality ranking system, integrate the mortality with causes of death, and visualize them. It helps us to choose the good life style in the future. 
 
 ## Conclusions
-| Death rate highest on|    Cause of death |
-| :--------|                : --------| 
+
+| Death rate highest on|  Cause of death |
+| --------| --------| 
 | Child |  Birth Trauma, Low Birth Weight |  
-| Middle age |   Drug Use, Homicide, AIDS, Poisoning, Hepatitis | 
-| Elderly             |  Most | 
+| Middle age | Drug Use, Homicide, AIDS, Poisoning, Hepatitis | 
+| Elderly    |  Most | 
 | No correlation |  Drownings, Road Traffic Accidents, Suicide |
+
 In 2017, 
 - The top one leading cause of death is coronary heart disease in the US. 
 - There is the negative correlation between the overall death rate and median household income for the states.
