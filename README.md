@@ -9,17 +9,33 @@ Mortality is one of healthcare outcome measurements. If we combine the mortality
 World health organization (WHO) and the United States centers for disease control and prevention (CDC) make the statistics data public every year. Understanding these data remains a major challenge. To solve this problem, we decided to build up the mortality ranking system, integrate the mortality with causes of death, and visualize them. It helps us to choose the good life style in the future. 
 
 ## Conclusions:
-
-
+In 2017, 
+- The top one leading cause of death is coronary heart disease in the US. 
+- There is the negative correlation between the overall death rate and median household income for the states.
+ Specifically, the states around central east areas have higher mortality than those from other areas.
+ The median household income for the states in central east areas are relatively lower than that for other states. 
+- Generally, for most cause of deaths, the older, the higher death rate.(Except for low birth weight)
+- For birth trauma and low birth weight, both of them usually cause the death at low age.
+- Cancer as one of main cause of deaths, there is no big difference between male and female at all ages. 
 ## Data sources:  
-* **World health rankings website**, from [here](https://www.worldlifeexpectancy.com/usa-cause-of-death-by-age-and-gender)
+- **World health rankings website**, from [here](https://www.worldlifeexpectancy.com/usa-cause-of-death-by-age-and-gender)
 The main data are from the public website (shown as above), which contain the death rate, the causes of disease, gender, and the age for different states in the US. 
-* **The household income for 51 states in the United States in 2017**, from [here](https://www2.census.gov/programs-surveys/cps/tables/time-series/historical-income-households/h08.xls)
+- **The household income for 51 states in the United States in 2017**, from [here](https://www2.census.gov/programs-surveys/cps/tables/time-series/historical-income-households/h08.xls)
+
+## Methodology 
+### Collecting and process data
+Our proposed solution is to use a python package (BeautifulSoup) to extract data from the websites (shown above). Then we use pandas, numpy to clean and organize data. Calculating death rate. Making it easy to access.
+### Health System
+We build a health ranking system using flask. Our system can provide health advice to people who input their location, age, and gender.
+### Analysis and visualization
+build up the overall health ranking system and household income across 51 states. Firstly, we organize the data according to gender, ages, and states.  Then we are going to visualize the data by showing the number of deaths vs. different causes.
+
+
 ## File Structure
 ```
 Root
 |
-+----data                       Saved data to be used on demand 
++----data                       Saved data 
 |   | state_population_ages_all_wo_us.csv
 |   |                       Death data in the US, 2017 including sum of all ages                    
 |   |
@@ -27,6 +43,11 @@ Root
 |   |                       Death data in the US, 2017 without sum of all ages
 |   |           
 |   | h08.csv             US income data
+|   | population.xlsx     Scraped population raw data
+|   +----states             A folder containing scraped US death data
+|
++----img
+|   | healthsystem.gif    gif used in readme
 |
 +----HealthSystem               A web application for searching data
 |       |   HealthSystem.py     The main function
@@ -53,7 +74,7 @@ Root
 **plot_CA.py**: functions used for plotting one certain state analysis - California.  
 
 **All .csv data files is in the `data` folder **
-[Bokeh plot](https://github.com/ygc506/ECE143_Project15/blob/master/img/bokehplot.html)
+
 ## Instructions on running the code
 ### Required packages: 
 make sure to install below packages to process the data and generate the plots
@@ -152,13 +173,7 @@ Run Jupyter Notebook
 ```bash
 $ jupyter notebook
 ```
-A browser window should show up. Select `demo.ipynb`
-## The plan: 
-Our proposed solution is to use a python package (BeautifulSoup) to extract data from the websites (shown above) and build up the overall health ranking system  and household income across 51 states. Firstly, we organize the data according to gender, ages, and states.  Then we are going to visualize the data by showing the number of deaths vs. different causes.
-Our system can provide health advice to people who input their location, age, and gender.
-
-
-
+A browser window should show up. Select `demo.ipynb` then run all cells.
 ## Health System Demo:
 Instrunction: Input age, gender and state, then click submit. The system will find fata matching those information the user input and display the list of top five causes of death for that group of people.
 ![Health System Animation](https://github.com/ygc506/ECE143_Project15/blob/master/img/healthsystem.gif)
