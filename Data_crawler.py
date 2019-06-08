@@ -53,7 +53,7 @@ def drate_collection(state,gender):
     
     index = 0
     for region, _ in state_list.items():
-        writer = pd.ExcelWriter(f'data/newState_0523/{region}.xlsx')
+        writer = pd.ExcelWriter(f'data/states/{region}.xlsx')
         state='' if region=='United States' else str(index)
         
         for g in gender:           
@@ -185,4 +185,4 @@ if __name__ == '__main__':
     gender =['female','male','both']
     for i in gender:
         drate_collection(state_list,gender)
-        population_collection(state_list,gender):
+        population_collection(state_list,gender)
