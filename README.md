@@ -15,38 +15,33 @@ World health organization (WHO) and the United States centers for disease contro
 * **World health rankings website**, from [here](https://www.worldlifeexpectancy.com/usa-cause-of-death-by-age-and-gender)
 The main data are from the public website (shown as above), which contain the death rate, the causes of disease, gender, and the age for different states in the US. 
 * **The household income for 51 states in the United States in 2017**, from [here](https://www2.census.gov/programs-surveys/cps/tables/time-series/historical-income-households/h08.xls)
-##File Structure
+## File Structure
 ```
 Root
 |
-+----data           Saved data to be used on demand 
++----data                       Saved data to be used on demand 
 |   | state_population_ages_all_wo_us.csv
-|   |           Death data in the US, 2017
-|   |             including sum of all ages
+|   |                       Death data in the US, 2017 including sum of all ages                    
 |   |
 |   | state_population_ages_wo_us.csv
-|   |           Death data in the US, 2017
-|   |             without sum of all ages
-|   |
-|   | h08.csv       US income data
+|   |                       Death data in the US, 2017 without sum of all ages
+|   |           
+|   | h08.csv             US income data
 |
-+----HealthSystem         A web application for searching data
-|       |   HealthSystem.py   The main function
-|       +----templates      Web Page templates to render
++----HealthSystem               A web application for searching data
+|       |   HealthSystem.py     The main function
+|       +----templates          Web Page templates to render
 |           |   index.html
 |           |   result.html
 |
-|    Data_crawler.py      Crawling data from web
-|    Merge_data.py        Organize crawled data 
-|                 and save to a file
+|    Data_crawler.py            Crawling data from web
+|    Merge_data.py              Organize crawled data and save to a file
 |  Presentation slides.pdf  
-|    demo.ipynb         Shows all visualization 
-|                 for presentation
-|    plot_CA.py         Plot code for California section
-|    plot_cancer.py       Plot code for cancer section
-|    plot_demo.py       Plot code for gender section
-|    plot_map_income.py     Plot code for US death and 
-|                 income correlation section
+|    demo.ipynb                 Shows all visualization for presentation
+|    plot_CA.py                 Plot code for California section
+|    plot_cancer.py             Plot code for cancer section
+|    plot_demo.py               Plot code for gender section
+|    plot_map_income.py         Plot code for US death and income correlation section
 |  README.md
 ```
 ### Files Details:
@@ -144,4 +139,4 @@ Our system can provide health advice to people who input their location, age, an
 
 ## Health System Demo:
 Instrunction: Input age, gender and state, then click submit. The system will find fata matching those information the user input and display the list of top five causes of death for that group of people.
-![Dynamic graph](https://github.com/pytorch/pytorch/blob/master/docs/source/_static/img/dynamic_graph.gif)
+![Health System Animation](https://github.com/ygc506/ECE143_Project15/blob/master/img/healthsystem.gif)
