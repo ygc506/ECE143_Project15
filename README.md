@@ -104,7 +104,8 @@ Root
 **plot_demo.py**: functions used for general plots.  
 **plot_map_income.py**: functions used for plotting US map and correlation between death rate and household income.  
 **plot_cancer.py**: functions used for plotting one certain cause of death-cancer.  
-**plot_CA.py**: functions used for plotting one certain state analysis - California.  
+**plot_CA.py**: functions used for plotting one certain state analysis - California. 
+
 **All .csv data files are in the `data` folder **
 
 ## Instructions on running the code
