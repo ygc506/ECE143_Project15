@@ -180,7 +180,6 @@ Press `CTRL+C` to quit. To go back:
 $ cd ../
 ```
 #### Run Jupyter Notebook
-Run Jupyter Notebook
 ```bash
 $ jupyter notebook
 ```
