@@ -8,7 +8,7 @@ from pandas.io import sql
 app = Flask(__name__)
 
 # read merged data from csv
-all_data = pd.read_csv("state_population_ages_all_wo_us.csv")
+all_data = pd.read_csv("../data/state_population_ages_all_wo_us.csv")
 
 
 def getdata4user(data, gender, state, age):
