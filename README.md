@@ -106,7 +106,7 @@ Root
 **plot_cancer.py**: functions used for plotting one certain cause of death-cancer.  
 **plot_CA.py**: functions used for plotting one certain state analysis - California. 
 
-**All .csv data files are in the `data` folder **
+**All .csv data files are in the `data` folder**
 
 ## Instructions on running the code
 
