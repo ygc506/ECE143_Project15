@@ -9,7 +9,7 @@ Mortality is one of healthcare outcome measurements. If we combine the mortality
 World health organization (WHO) and the United States centers for disease control and prevention (CDC) make the statistics data public every year. Understanding these data remains a major challenge. To solve this problem, we decided to build up the mortality ranking system, integrate the mortality with causes of death, and visualize them. It helps us to choose the good life style in the future. 
 
 ## Conclusions:
-
+- The mid east
 
 ## Data sources:  
 * **World health rankings website**, from [here](https://www.worldlifeexpectancy.com/usa-cause-of-death-by-age-and-gender)
