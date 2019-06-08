@@ -16,7 +16,7 @@ In 2017,
  The median household income for the states in central east areas are relatively lower than that for other states. 
 - Generally, for most cause of deaths, the older, the higher death rate.(Except for low birth weight)
 - For birth trauma and low birth weight, both of them usually cause the death at low age.
-- Cancer as one of main cause of deaths, there is no big difference between male and female at all ages. 
+- Cancer as one of main cause of deaths, there is no big difference in cancer death rate between male and female at all ages. 
 ## Data sources:  
 - **World health rankings website**, from [here](https://www.worldlifeexpectancy.com/usa-cause-of-death-by-age-and-gender)
 The main data are from the public website (shown as above), which contain the death rate, the causes of disease, gender, and the age for different states in the US. 
