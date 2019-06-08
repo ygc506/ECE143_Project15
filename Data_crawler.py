@@ -185,6 +185,6 @@ if __name__ == '__main__':
     state_list = state_list_fun(url)
     
     gender =['female','male','both']
-    for i in gender:
-        drate_collection(state_list,gender)
-        population_collection(state_list,gender)
+    drate_collection(state_list,gender)
+    gender =['male','female','both']
+    population_collection(state_list,gender)
