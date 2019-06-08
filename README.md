@@ -11,10 +11,10 @@ World health organization (WHO) and the United States centers for disease contro
 ## Dataset:  
 World health rankings website: [here](https://www.worldlifeexpectancy.com/usa-cause-of-death-by-age-and-gender)
 The entire data are from the public website (shown as above), which contain the death rate, the causes of disease, gender, and the age for different states in the US. 
-The house-hould income for 51 states in the United States in 2017, from [here](https://www.census.gov/content/dam/Census/library/publications/2018/acs/acsbr17-01.pdf)
+The house-hould income for 51 states in the United States in 2017, from [here](https://www2.census.gov/programs-surveys/cps/tables/time-series/historical-income-households/h08.xls)
 
 ## Methodology:  
-### Packages:  
+### Packages: (make sure to install below packages to process the data and generate the plots) 
 #### 1. Pandas
 * Official website: [here](https://pandas.pydata.org/)
 * Installation
@@ -77,9 +77,14 @@ Our system can provide health advice to people who input their location, age, an
 
 ## Files Details:
 **demo.ipynb**: demonstrate all visualization figures and plots.  
+                combinations of the use of functions provided in the below .py files
 **plot_demo.py**: functions used for general plots.  
 **plot_map_income.py**: functions used for plotting US map and correlation between death rate and household income.  
 **plot_cancer.py**: functions used for plotting one certain cause of death-cancer.  
 **plot_CA.py**: functions used for plotting one certain state analysis - California.  
 
 **All .csv data files is in the `data` folder **
+
+## Health Systme Demo:
+Instrunction: Input age, gender and state, then click submit. The system will find fata matching those information the user input and display the list of top five causes of death for that group of people.
+
