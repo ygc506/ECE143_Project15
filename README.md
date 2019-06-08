@@ -28,7 +28,17 @@ Our proposed solution is to use a python package (BeautifulSoup) to extract data
 ### Health System
 We build a health ranking system using flask. Our system can provide health advice to people who input their location, age, and gender.
 ### Analysis and visualization
-build up the overall health ranking system and household income across 51 states. Firstly, we organize the data according to gender, ages, and states.  Then we are going to visualize the data by showing the number of deaths vs. different causes.
+We build up the overall health ranking system and household income across 51 states. Firstly, we reorganize the data based on the variables (ex. gender, ages, and states). Then we visualize the data to answer the following questions:
+- Which are top 10 leading causes of death in the US? 
+- Which states have the highest and lowest mortality in the US?
+- Is there any correlation between household income state and overal death rate?
+- What are the age-related cause of death in the US?
+- What are the gender-related cause of death in the US?
+- How different is the cancer death rate between male and female?
+- How different is the cancer death rate among different age groups?
+- Case study: how different is overall death rate between male and female in california?
+              how different is overall death rate among different age groups in california?
+              
 
 
 ## File Structure
@@ -68,7 +78,6 @@ Root
 ### Files Details:
 **demo.ipynb**: demonstrate all visualization figures and plots.  
                 combinations of the use of functions provided in the below .py files
-
 **plot_demo.py**: functions used for general plots.  
 **plot_map_income.py**: functions used for plotting US map and correlation between death rate and household income.  
 **plot_cancer.py**: functions used for plotting one certain cause of death-cancer.  
