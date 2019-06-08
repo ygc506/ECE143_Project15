@@ -25,7 +25,7 @@ The median household income for the states in central east areas are relatively 
 - For most cause of deaths, the older, the higher death rate.
 
 | Death rate highest on|    Cause of death |
-| :--------|                : --------| 
+| --------|                --------| 
 | Child |  Birth Trauma, Low Birth Weight |  
 | Middle age |   Drug Use, Homicide, AIDS, Poisoning, Hepatitis | 
 | Elderly             |  Most | 
@@ -34,7 +34,7 @@ The median household income for the states in central east areas are relatively 
 - Some causes of death are related to gender
 
 | Male-related | Female-related|
-| :--------     |   : --------| 
+| --------     |    --------| 
 |Suicide Road, Road Traffic Accidents, Prostate Cancer, Poisonings| Stroke, Breast Cancer,  Alzheimer's, Uterine Cancer, Ovary Cancer|
 
 - Cancer as one of main cause of deaths, there is no big difference in cancer death rate between male and female at all ages. 
