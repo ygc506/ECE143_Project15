@@ -6,7 +6,7 @@ import pandas as pd
 from pandas.io import sql
 
 
-def merge_data(states_path, population_file, output):
+def merge_data(states_path, population_file, output, age_all=True):
     """
     Merge scrapped data and generate a big .csv file as the main dataset for this project.
         - add gender and state columns
@@ -15,6 +15,7 @@ def merge_data(states_path, population_file, output):
     :param str states_path: Directory that contain scrapped death data
     :param str population_file: Filename of scrapped population data
     :param str output: Filename of output .csv file
+    :param bool age_all: Set if output contains data for the sum of all ages
     :return: None
     :rtype: None
     """
@@ -86,13 +87,14 @@ def merge_data(states_path, population_file, output):
     all_data.to_sql('Table1', conn)
 
     frames = []
-    age_range = "all"
-    query = f"select name,\"d_{age_range}\" as d,\"p_{age_range}\" as p,\"drate_{age_range}\" as drate,state,gender from Table1;"
-    # print(query)
-    df = sql.read_sql_query(query, conn)
-    row_number = df.shape[0]
-    df['age'] = [age_range] * row_number
-    frames.append(df)
+    if age_all:
+        age_range = "all"
+        query = f"select name,\"d_{age_range}\" as d,\"p_{age_range}\" as p,\"drate_{age_range}\" as drate,state,gender from Table1;"
+        # print(query)
+        df = sql.read_sql_query(query, conn)
+        row_number = df.shape[0]
+        df['age'] = [age_range] * row_number
+        frames.append(df)
     for rg in ranges:
         s, e = [int(i) for i in rg.tolist()]
         if e > 0:
