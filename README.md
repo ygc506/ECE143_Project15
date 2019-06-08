@@ -162,6 +162,7 @@ $ mkdir data/states
 Run data crawler:
 ``` bash
 $ python Data_crawler.py
+$ rm "data/states/United States.xlsx"
 ```
 #### Process scraped data
 ``` bash
