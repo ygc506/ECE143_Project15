@@ -169,10 +169,12 @@ def population_collection(state,gender):
         frame = pd.DataFrame(data)  
         frame = frame.T
         frame.columns=["p_all", "p_0_14", "p_15_24", "p_25_34","p_35_44","p_45_54","p_55_64","p_65_74","p_75+"]
+        frame = frame.reset_index()
+        frame = frame.rename(index=str, columns={"index":"state"})
         g_index+=1    
         
         # write into file
-        frame.to_excel(writer, sheet_name=g, index=True,engine='openpyx1')
+        frame.to_excel(writer, sheet_name=g, index=False,engine='openpyx1')
     
     writer.save()
 
